@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Character Selection</title>
     <!-- TODO: Import your CSS File here -->
-    <link  rel = "stylesheet" src = "style.css">
+    <link  href = "style.css" rel = "stylesheet">
 </head>
 <body>
     <h1 style = "text-align: center;">Choose Your Character!</h1>
     <section class="container">
-        <form id="characterForm"type = "get" action = "page3.html"></form>
+        <form id="characterForm" type = "get" action = "page3.html">
         <fieldset>
-            <legend style = "text-align: center;">
+            <legend id = "chars" style = "text-align: center;">
                 Choose Your Character!
             </legend>
-            <input type="radio" id="Aria" name="char" value="">
-            <label for="Aria">Aria, the Warrior</label><br>
+        <section class = "box" >
+            <input type = "radio" id = "item1" name = "char" value="Aria">
+            <label for="Aria" id = "item1"><strong>Aria, the Warrior:</strong> Strong and brave
+                ,with the ability to overcome physical obstacles.
+            </label><br>
             <input type="radio" id="Eldrin" name="char" value="">
-            <label for="Eldrin">Eldrin, the Mage</label><br>
+            <label for="Eldrin"><strong>Eldrin, the Mage:</strong> Wise and
+                knowledgeable, with the powers to solve puzzles and cast spells</label><br>
             <input type="radio" id="Tara" name="char" value="">
-            <label for="Tara">Tara, the Rogue</label><br>
+            <label for="Tara"><strong>Tara, the Rogue:</strong> Quick and 
+            cunning, with skills in stealth and persuasion</label><br>
+        </section>
         </fieldset>
         <button onclick="location.href='page3.html'">Continue</button>
+    </form>
     </section>
 </body>
 </html>

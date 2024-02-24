@@ -75,3 +75,11 @@ button:hover {
 .stealth-option:hover {
     background-color: #e8e8e8;
 }
+.box{
+    
+    border:2px solid grey;
+    text-align: center; 
+    font-size: 24px; 
+    padding:20px;
+    margin:10px;
+}
