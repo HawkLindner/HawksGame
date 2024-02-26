@@ -12,24 +12,29 @@
     <section class="container">
         <form id="characterForm" type = "get" action = "page3.html">
         <fieldset>
-            <legend id = "chars" style = "text-align: center;">
+            <legend>
                 Choose Your Character!
             </legend>
         <section class = "box" >
-            <input type = "radio" id = "item1" name = "char" value="Aria">
-            <label for="Aria" id = "item1"><strong>Aria, the Warrior:</strong> Strong and brave
+            <input type = "radio" id = "Aria" name = "char" value="Aria">
+            <label for="Aria" id = "Aria"><strong>Aria, the Warrior:</strong> Strong and brave
                 ,with the ability to overcome physical obstacles.
             </label><br>
-            <input type="radio" id="Eldrin" name="char" value="">
+            <input type="radio" id="Eldrin" name="char" value="Eldrin">
             <label for="Eldrin"><strong>Eldrin, the Mage:</strong> Wise and
-                knowledgeable, with the powers to solve puzzles and cast spells</label><br>
-            <input type="radio" id="Tara" name="char" value="">
+                knowledgeable, with the powers to solve puzzles and cast spells
+            </label><br>
+            <input type="radio" id="Tara" name="char" value="Tara">
             <label for="Tara"><strong>Tara, the Rogue:</strong> Quick and 
-            cunning, with skills in stealth and persuasion</label><br>
+            cunning, with skills in stealth and persuasion
+            </label><br>
         </section>
         </fieldset>
-        <button onclick="location.href='page3.html'">Continue</button>
+        <p id="output">Pick one man</p>
+        <button id = "continue">Continue</button>
     </form>
     </section>
+
+
+    <script src = "script.js" rel = "js"></script>
 </body>
-</html>
