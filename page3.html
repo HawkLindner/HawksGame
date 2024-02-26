@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Quest Begins</title>
+    <title>Pack your bag</title>
     <!-- TODO: Import your CSS File here -->
     <link  href = "style.css" rel = "stylesheet">
 </head>
@@ -11,19 +11,30 @@
     <section class="container">
         <h1>Pack Your Bag</h1>
         <p>Select the supplies you wish to take on your quest. Choose wisely, as you can only carry a limited amount.</p>
-        <form>
+        <form id = "supply" action = "page4.html" method = "GET">
+        <div class = "item">
             <input type="checkbox" id = "food" name = "food" value = "food">
             <label for = "food">Food: Esential for energy</label>
+        </div>
+        <div class = "item">
             <input type="checkbox" id = "water" name = "water" value = "water">
             <label for = "water">Water: Hydration is key</label>
+        </div>
+        <div class = "item">
             <input type="checkbox" id = "magicPotions" name = "magicPotions" value = "magicPotions">
-            <label for = "food">Magic Potions: For health and Magical energy</label>
+            <label for = "magicPotions">Magic Potions: For health and Magical energy</label>
+        </div>
+        <div class = "item">
             <input type="checkbox" id = "maps" name = "maps" value = "maps">
             <label for = "maps">Maps: Don't get lost!</label>
+        </div>
+        <div class = "item">
             <input type="checkbox" id = "sword" name = "sword" value = "sword">
-            <label for = "sward">Sward: Fight back!</label>
+            <label for = "sword">Sword: Fight back!</label>
+        </div>
+        <button type = "submit" value = "Continue">Continue</button>
         </form>
-        <button onclick="location.href='page4.html'">Begin Your Quest</button>
+       
     </section>
 </body>
 </html>

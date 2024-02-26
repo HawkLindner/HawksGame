@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Continues</title>
+    <!-- TODO: Import your CSS File here -->
+    <link  href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+        <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
+        <!-- Your Form -->
+        <form action = "page6.html" method ="GET">
+                <label>Choose Your Path:</label>
+                <label for="pathChoice"></label>
+                <select id = "pathChoice">
+                    <option id = "default" value = "">--Please choose an option--</option>
+                    <option id = "strength" value = "strength">Strength: Brute force is the right way</option>
+                    <option id = "wise" value = "wisdom">Wisdom: Brainz over Bronze</option>
+                    <option id = "sneak" value = "stealth">Stealth: SHHHHHHH sneaky</option>
+                </select>
+                <button id="contiue">Continue on Your Journey</button>
+        </form>
+        <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
+    </section>
+
+    <script src = "script.js" defer></script>
+</body>
+</html>
