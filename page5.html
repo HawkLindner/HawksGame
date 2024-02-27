@@ -12,7 +12,7 @@
         <h1>The Journey Continues</h1>
         <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
         <!-- Your Form -->
-        <form action = "page6.html" method ="GET">
+        <form id = "form" action = "page6.html" method ="GET">
                 <label>Choose Your Path:</label>
                 <select id = "pathChoice">
                     <option value = "default">--Please choose an option--</option>
@@ -35,12 +35,12 @@
         "wisdom": "green",
         "stealth": "purple"
     };
+    console.log(selectedOption);
     let bgc = document.getElementById("holder").style.backgroundColor = colors[selectedOption];
     if(selectedOption === "stealth"){
-        form = document.getElementById("continue");
+        form = document.getElementById("form");
         form.action = "page5b.html";
     }
     });
     </script>
 </body>
-</html>
