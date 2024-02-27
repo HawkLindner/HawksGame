@@ -1,4 +1,5 @@
 
+"use strict";
 const sub = document.getElementById("submitBtn");
 const textBox = document.getElementById("textBox");
 const answer = "echo";
