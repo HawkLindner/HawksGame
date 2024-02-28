@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The end</title>
+    <!-- TODO: Import your CSS File here -->
+    <link  href = "style.css" rel = "stylesheet">
+</head>
+<body>
+    <section class="container">
+        <h1>Your Quest Has Concluded</h1>
+        <p>Based on your choices,Malakar stood no chance. You ended up battling to a grueling end. But after all, 
+            Your resilience led you to victory. The kingdom will remember your deeds for generations to come.</p> 
+            <p>We hope you enjoyed your adventure. Would you like to provide feedback on your experience?</p>
+
+            <label for = "feedback">Your feedback</label>
+            <textarea type = "text" id="feedback" placeholder="Enter your feedback here..."rows = "4" cols = "50"></textarea>
+            <div style = "display:flex;flex-direction: column;align-items: center;">
+            <button id = "submit feedback" >Submit Feedback</button>
+            <button onclick="location.href='index.html'">Play Again</button>
+            </div>
+            <p>I am truly thankful to my family for pushing me this far to continue to belive in me and my academic progress. 
+                I understand that in the past I have not been seen as much of an academic weapon but I do try my hardest each 
+                and every day. My classes are a challange to me and studying and retaining the information is a little difficult 
+                but I am doing my best for them and for myself. Stuff like this project I experiened a lot of trouble where I didnt 
+                quite know what I was doing, and have some things to definetly work on.
+            </p>
+            <div id = "output"></div>
+    </section>
+    <script>
+        const btn = document.getElementById("submit feedback");
+        btn.addEventListener('click', () =>{
+            let feedInput = document.getElementById("feedback").value;
+            console.log(feedInput);
+        })
+    </script>
+</body>
+</html>

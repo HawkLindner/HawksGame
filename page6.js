@@ -1,8 +1,15 @@
+
+let person;
+let outputs = {};
+let selectedOption;
+let selectedArmor ='';
+
+"use strict";
 let confront = document.querySelectorAll(".fight");
 const choice = document.getElementById("pathChoice");
         choice.addEventListener("change", () => {
-        const selectedOption = choice.value;
-const outputs = {
+        selectedOption = choice.value;
+     outputs = {
     "default" : "retry",
     "option1" : "destroy",
     "option2" : "smarts",
@@ -23,12 +30,11 @@ else{
 
 
 let textBox = document.getElementById('textbox');
-const person = document.getElementById('greeting');
+person = document.getElementById('greeting');
 
 textBox.addEventListener('keyup', event =>{
-    person.textContent = textBox.value;
-    let name = textBox.value;
-    console.log(name);
+    person = textBox.value;
+    console.log("Name " +person);
 })
 
 const radioButtons = document.querySelectorAll('input[name="weapon"]');
@@ -38,7 +44,6 @@ const radioButtons = document.querySelectorAll('input[name="weapon"]');
         });
     });
 
-    let selectedArmor = "";
     const checkboxes = document.querySelectorAll('input[name="armor"]');
     checkboxes.forEach((checkbox) => {
         checkbox.addEventListener('change', function() {
@@ -53,4 +58,7 @@ const radioButtons = document.querySelectorAll('input[name="weapon"]');
 const msg = document.getElementById('message');
 msg.addEventListener('keyup',event =>{
     let usrMsg = msg.value;
+    console.log("msg " + usrMsg);
 });
+
+console.log(outputs[selectedOption])
