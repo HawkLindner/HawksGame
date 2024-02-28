@@ -34,12 +34,39 @@
                 <legend>
                     The Brave
                 </legend>
-                <label id = "type">Name</label>
+                <label id = "type">Name:</label>
                 <input for = "type" id = "textbox" type = "text" placeholder="name">
-                <div id = "greeting"></div>
                 
             </fieldset>
+            <fieldset id = "form" style ="display:flex; flex-direction: row; justify-content: center;">
+                <legend>
+                    Select Your Weapon
+                </legend>
+                <input type = "radio" id = "bow" name = "weapon" value="bow">
+                <label for="bow" id = "bow">Bow</label><br>
+                <input type = "radio" id = "sword" name = "weapon" value="sword">
+                <label for="sword" id = "sword">Sword</label><br>
+                <input type = "radio" id = "staff" name = "weapon" value="staff">
+                <label for="staff" id = "staff">Staff</label><br>
+            </fieldset>
+            <fieldset id = "form" style ="display:flex; flex-direction: row; justify-content: center;">
+                <legend>
+                    Select another Weapon
+                </legend>
+                <input type = "checkbox" id = "plate" name = "armor" value="plate armor">
+                <label for="plate" id = "plate">Plate armor</label><br>
+                <input type = "checkbox" id = "chain" name = "armor" value="chain armor">
+                <label for="chain" id = "chain">Chain armor</label><br>
+                <input type = "checkbox" id = "cloak" name = "armor" value="cloak">
+                <label for="cloak" id = "cloak">Cloak</label><br>
+            </fieldset>
+            <div style="display: flex; flex-direction: column-reverse; margin-top: 5pt;">
+                <input type="text" id="message" style="height: 50pt; text-align: left; vertical-align: top;">
+                <label for="message">Message for Malakar</label>
+            </div>
+            
         </fieldset>
+        <button onclick="location.href='package7.html'">Face Malakar</button>
         <p>Your choice here will determine the fate of the kingdom. Choose wisely.</p>
     </section>
 

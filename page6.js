@@ -30,3 +30,27 @@ textBox.addEventListener('keyup', event =>{
     let name = textBox.value;
     console.log(name);
 })
+
+const radioButtons = document.querySelectorAll('input[name="weapon"]');
+    radioButtons.forEach((radio) => {
+        radio.addEventListener('change', function() {
+            console.log(`Selected weapon: ${this.value}`);
+        });
+    });
+
+    let selectedArmor = "";
+    const checkboxes = document.querySelectorAll('input[name="armor"]');
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                selectedArmor += `${this.value}, `;
+            } else {
+                selectedArmor = selectedArmor.replace(`${this.value}, `, "");
+            }
+            console.log(`Selected armor: ${selectedArmor}`);
+        });});
+
+const msg = document.getElementById('message');
+msg.addEventListener('keyup',event =>{
+    let usrMsg = msg.value;
+});
